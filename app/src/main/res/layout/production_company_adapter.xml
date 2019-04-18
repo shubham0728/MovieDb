@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/cardview_width_small"
+        android:layout_height="@dimen/cardview_height_small"
+        card_view:cardElevation="@dimen/elevation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progress_production"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="@dimen/activity_margin"
+                android:layout_height="@dimen/activity_margin"
+                android:layout_centerInParent="true"
+                android:theme="@style/Progress" />
+
+            <ImageView
+                android:id="@+id/img_movie_production"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/transparent_bg_dark"
+                android:padding="@dimen/padding">
+
+                <TextView
+                    android:id="@+id/txt_production_name"
+                    style="@style/TextAppearance.AppCompat.Title.Inverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway"
+                    android:padding="@dimen/padding"
+                    android:textSize="@dimen/elevation"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>
